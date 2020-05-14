@@ -203,7 +203,6 @@ body{
 }
 .bloc-3-txt span{
 	font-size: 22px;
-	font-weight: bold;
 	text-decoration: underline;
 }
 .bloc-3-txt p{
@@ -236,6 +235,9 @@ body{
 	.bloc-3-txt{
 		font-size: 20px;
 		line-height: 35px;
+	}
+	.bloc-3-txt span{
+		font-size: 20px;
 	}
 }	
 @media screen and (max-width: 800px) {
@@ -273,6 +275,10 @@ body{
 	.block-2-img img{
 		width: 60%;
 		border-radius: 50%;
+	}
+	.bloc-3-txt h2{
+		font-size: 25px;
+		line-height: 30px;
 	}
 }
 
@@ -324,6 +330,17 @@ body{
 		font-size: 16px;
 		line-height: 25px;
 	}
+	.bloc-3-txt span{
+		font-size: 16px;
+		line-height: 25px;
+	}
+	.bloc-3-txt h2{
+		font-size: 18px;
+		line-height: 25px;
+	}
+	.block-3-content div{
+		border-radius: 40px;
+	}
 }
 @media screen and (max-width: 380px) {
 	.header{
@@ -345,7 +362,7 @@ body{
 		color: white;
 	}
 	.bloc-1{
-		padding-top: 13%;
+		padding-top: 7%;
 		display: flex;
 	}
 	.bloc-1-txt{
@@ -365,8 +382,20 @@ body{
 		line-height: 25px;
 		text-align: center;
 	}
+	.block-3-content div{
+		border-radius: 30px;
+	}
 	.bloc-3-txt{
 		font-size: 12px;
 		line-height: 25px;
+	}
+	.bloc-3-txt span{
+		font-size: 12px;
+		line-height: 25px;
+		text-decoration: none;
+	}
+	.bloc-3-txt h2{
+		font-size: 15px;
+		line-height: 20px;
 	}
 }
