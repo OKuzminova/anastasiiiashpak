@@ -167,7 +167,7 @@ body{
 	font-weight: bold;
 }
 .bloc-2-txt a:hover{
-	color: #A82D1F;
+	color: #D88658;
 }
 
 /*Стили контента БЛОК 3 О МАРАФОНЕ*/
@@ -217,7 +217,7 @@ body{
 	text-align: center;
 }
 .block-3-content-2 div{
-	padding: 6%;
+	padding: 6% 6% 3%;
 	/*border: 4px solid yellow;*/
 	border-radius: 50px;
 }
@@ -234,10 +234,84 @@ body{
 	border-radius: 50px;
 }
 
+
+/*Стили контента БЛОК 4 ЦЕНЫ*/
+.block-4{
+	width: 100%;
+	padding-bottom: 5%;
+	background-color: #E5E5E5;	
+}
+.block-4-content{
+	padding-top: 5%;
+	margin-left: 10%;
+	width: 80%;
+	display: flex;
+}
+.bloc-4-txt h2{
+	font-size: 28px;
+	font-weight: bold;
+	color: black;
+	text-align: center;
+	line-height: 40px;
+
+}
+.bloc-4-txt h3{
+	font-size: 30px;
+	font-weight: bold;
+	color: #D88658;
+	text-align: center;
+	line-height: 40px;
+	text-shadow: #D88658 3px 2px 5px;
+}
+.bloc-4-txt h4{
+	font-size: 12px;
+	text-align: center;
+	line-height: 30px;
+	font-weight: normal;
+}
+.bloc-4-txt span{
+	border: 2px solid black;
+	border-radius: 100%;
+	font-weight: bold;
+	font-size: 22px;
+}
+.bloc-4-txt{
+	font-size: 22px;
+	font-weight: normal;
+	line-height: 40px;
+}
+.bloc-4-txt p{
+	padding-top: 10px;
+}
+.btn-1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    width: 160px;
+    border-radius: 50px;
+    padding: 8px 25px;
+    margin-top: 1%;
+    background-color: #D88658;
+    transition: 1s;
+    overflow: hidden;
+}
+.btn-1 a{
+    color: black;
+    text-decoration: none;
+}
+.btn-1 a:hover{
+	color: white;
+	transition: 1.5s;
+	overflow: hidden;
+}
+
 @media screen and (max-width: 1200px) {
 	.bloc-2-txt{
 		font-size: 18px;
 		line-height: 30px;
+	}
+	.btn-1{
+    	margin-top: 2%;
 	}
 }
 @media screen and (max-width: 940px) {
@@ -262,6 +336,13 @@ body{
 		line-height: 35px;
 	}
 	.bloc-3-txt span{
+		font-size: 20px;
+	}
+	.bloc-4-txt{
+		font-size: 20px;
+		line-height: 35px;
+	}
+	.btn-1{
 		font-size: 20px;
 	}
 }	
@@ -384,6 +465,26 @@ body{
 		width: 70%;
 		border-radius: 30px;
 	}
+	.bloc-4-txt h2{
+		font-size: 18px;
+		line-height: 25px;
+	}
+	.bloc-4-txt h3{
+		font-size: 20px;
+		line-height: 25px;
+	}
+	.bloc-4-txt h4{
+		font-size: 10px;
+		line-height: 25px;
+	}
+	.bloc-4-txt{
+		font-size: 16px;
+		line-height: 25px;
+	}
+	.btn-1{
+		font-size: 16px;
+		margin-top: 4%;
+	}
 }
 @media screen and (max-width: 380px) {
 	.header{
@@ -450,5 +551,29 @@ body{
 	.bloc-3-txt-2 img{
 		width: 80%;
 		border-radius: 20px;
+	}
+	.bloc-4-txt h2{
+		padding-top: 4%;
+		font-size: 15px;
+		line-height: 20px;
+	}
+	.bloc-4-txt h3{
+		font-size: 17px;
+		line-height: 20px;
+	}
+	.bloc-4-txt h4{
+		font-size: 6px;
+		text-align: center;
+		line-height: 20px;
+	}
+	.bloc-4-txt{
+		font-size: 12px;
+	}
+	.btn-1{
+	    font-size: 14px;
+	    width: 150px;
+	    margin-top: 6%;
+	    transition: 1s;
+	    overflow: hidden;
 	}
 }
