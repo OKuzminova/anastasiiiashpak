@@ -74,6 +74,16 @@ body{
 	display: flex;
 	flex-direction: column;
 }
+.footer{
+	width: 100%;
+	background-color: black;
+	color: white;
+}
+.footer p{
+	width: 80%;
+	padding: 2% 0 2%;
+	font-size: 18px;
+}
 .menu{
 	width: 80%;
 	height: 40px;
@@ -128,11 +138,34 @@ body{
 	font-size: 26px;
 	font-weight: normal;
 }
+.btn-1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    width: 160px;
+    border-radius: 50px;
+    border: 4px solid black;
+    padding: 8px 25px;
+    margin-top: 1%;
+    transition: 1s;
+    overflow: hidden;
+}
+.btn-1 a{
+    color: black;
+    text-decoration: none;
+}
+.btn-1 a:hover{
+	color: #D88658;
+	transition: 1.5s;
+	overflow: hidden;
+}
+
+
 
 /*Стили контента БЛОК 2*/
 .block-2{
 	width: 100%;
-	padding-bottom: 5%;
+	padding: 0 0 6%;
 	background-color: #E5E5E5;	
 }
 .block-2-content{
@@ -173,7 +206,7 @@ body{
 /*Стили контента БЛОК 3 О МАРАФОНЕ*/
 .block-3{
 	width: 100%;
-	padding-bottom: 5%;
+	padding: 1% 0 6%;
 	/*background-color: #9F957E;*/	
 }
 .block-3-content{
@@ -230,7 +263,7 @@ body{
 	padding-bottom: 4%;
 }
 .bloc-3-txt-2 img{
-	width: 60%;
+	width: 70%;
 	border-radius: 50px;
 }
 
@@ -253,7 +286,6 @@ body{
 	color: black;
 	text-align: center;
 	line-height: 40px;
-
 }
 .bloc-4-txt h3{
 	font-size: 30px;
@@ -283,7 +315,7 @@ body{
 .bloc-4-txt p{
 	padding-top: 10px;
 }
-.btn-1{
+.btn-2{
     text-align: center;
     font-weight: bold;
     font-size: 22px;
@@ -295,14 +327,142 @@ body{
     transition: 1s;
     overflow: hidden;
 }
-.btn-1 a{
+.btn-2 a{
     color: black;
     text-decoration: none;
 }
-.btn-1 a:hover{
+.btn-2 a:hover{
 	color: white;
 	transition: 1.5s;
 	overflow: hidden;
+}
+
+/*Стили контента БЛОК 5 ОТЗЫВЫ*/
+.block-5{
+	width: 100%;
+	padding-bottom: 5%;
+}
+.block-5-content{
+	padding-top: 5%;
+	width: 80%;
+	display: flex;
+}
+.bloc-5-txt h2{
+	font-size: 28px;
+	font-weight: bold;
+	color: black;
+	text-align: center;
+	line-height: 20px;
+}
+.bloc-5-txt p{
+	text-align: center;
+}
+.bloc-5-txt img{
+	width: 40%;
+}
+
+
+
+/*Стили контента БЛОК 6 РЕГИСТРАЦИЯ*/
+.block-6{
+	width: 100%;
+	padding-bottom: 5%;
+	background-color: #E5E5E5;	
+}
+.block-6-content{
+	padding-top: 5%;
+	margin-left: 10%;
+	width: 80%;
+	display: flex;
+}
+.bloc-6-txt h2{
+	padding-bottom: 4%;
+	font-size: 28px;
+	font-weight: bold;
+	color: black;
+	text-align: center;
+	line-height: 40px;
+}
+.forma {
+	border: 4px solid black;
+	margin: auto;
+	margin-top: 4%;
+	padding: 6% 10%;
+	border-radius: 50px; 
+	width: 80%;
+	font-weight: normal;
+}
+.forma p{
+	font-size: 22px;
+	line-height: 40px;
+}
+.forma input{
+	width: 80%;
+	font-size: 18px;
+	border: 3px solid #D88658;
+	box-shadow: #D88658 3px 2px 5px;
+}
+.forma span{
+	line-height: 20px;
+	font-size: 16px;
+}
+.btn-3{
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    width: 160px;
+    border-radius: 50px;
+    padding: 8px 25px;
+    margin-top: 1%;
+    background-color: #D88658;
+    transition: 1s;
+    overflow: hidden;
+}
+.btn-3 a{
+    color: black;
+    text-decoration: none;
+}
+.btn-3 a:hover{
+	color: white;
+	transition: 1.5s;
+	overflow: hidden;
+}
+
+/*Стили контента БЛОК 7 КОНТАКТЫ*/
+.block-7{
+	width: 100%;
+	padding-bottom: 5%;
+}
+.block-7-content{
+	padding-top: 5%;
+	margin-left: 10%;
+	width: 80%;
+	display: flex;
+}
+.bloc-7-txt h2{
+	font-size: 28px;
+	font-weight: bold;
+	color: black;
+	text-align: center;
+	line-height: 40px;
+}
+.bloc-7-txt{
+	font-size: 22px;
+	font-weight: normal;
+	line-height: 40px;
+}
+.bloc-7-txt p{
+	padding-top: 10px;
+}
+.bloc-7-txt span{
+	color: black;
+}
+.bloc-7-txt ul li{
+	color: #D88658;
+}
+.bloc-7-txt a{
+	color: #D88658;
+	text-decoration: none;
 }
 
 @media screen and (max-width: 1200px) {
@@ -311,6 +471,9 @@ body{
 		line-height: 30px;
 	}
 	.btn-1{
+    	margin-top: 2%;
+	}
+	.btn-2{
     	margin-top: 2%;
 	}
 }
@@ -344,6 +507,47 @@ body{
 	}
 	.btn-1{
 		font-size: 20px;
+	}
+	.btn-2{
+		font-size: 20px;
+	}
+	.btn-3{
+		font-size: 20px;
+		margin-top: 4%;
+	}
+	.block-6-content{
+		padding-top: 5%;
+		margin-left: 10%;
+		width: 80%;
+		display: flex;
+	}
+	.bloc-6-txt h2{
+		padding-top: 4%;
+		font-size: 25px;
+		line-height: 30px;
+	}
+	.forma {
+		margin-top: 10%;
+		padding: 4% 6% 8%;
+		width: 90%;
+	}
+	.forma p{
+		font-size: 20px;
+		line-height: 35px;
+	}
+	.forma input{
+		width: 80%;
+		font-size: 14px;
+	}
+	.forma span{
+		font-size: 16px;
+	}
+	.bloc-7-txt{
+		font-size: 20px;
+		line-height: 35px;
+	}
+	.footer p{
+		font-size: 16px;
 	}
 }	
 @media screen and (max-width: 800px) {
@@ -391,8 +595,12 @@ body{
 		line-height: 30px;
 	}
 	.bloc-3-txt-2 img{
-		width: 60%;
+		width: 70%;
 		border-radius: 40px;
+	}
+	.bloc-7-txt h2{
+		font-size: 25px;
+		line-height: 30px;
 	}
 }
 
@@ -462,7 +670,7 @@ body{
 		padding-top: 2%;
 	}
 	.bloc-3-txt-2 img{
-		width: 70%;
+		width: 80%;
 		border-radius: 30px;
 	}
 	.bloc-4-txt h2{
@@ -485,12 +693,68 @@ body{
 		font-size: 16px;
 		margin-top: 4%;
 	}
+	.btn-2{
+		font-size: 16px;
+		margin-top: 4%;
+	}
+	.bloc-5-txt h2{
+		font-size: 18px;
+		line-height: 25px;
+	}
+
+	.block-6{
+		padding-bottom: 12%;
+	}
+	.block-6-content{
+		padding-top: 5%;
+		margin-left: 10%;
+		width: 80%;
+		display: flex;
+	}
+	.bloc-6-txt h2{
+		padding-top: 4%;
+		font-size: 18px;
+		line-height: 25px;
+	}
+	.forma {
+		margin-top: 10%;
+		padding: 4% 6% 8%;
+		width: 90%;
+	}
+	.forma p{
+		font-size: 16px;
+		line-height: 25px;
+	}
+	.forma input{
+		width: 90%;
+		font-size: 12px;
+	}
+	.forma span{
+		font-size: 12px;
+		line-height: 15px;
+	}
+	.btn-3{
+		font-size: 16px;
+		margin-top: 4%;
+	}
+	.bloc-7-txt h2{
+		font-size: 18px;
+		line-height: 25px;
+	}
+	.bloc-7-txt{
+		font-size: 16px;
+		line-height: 25px;
+	}
 }
 @media screen and (max-width: 380px) {
 	.header{
 		border: none;
 		background-position: top;
 		height: 450px;
+	}
+	.footer p{
+		font-size: 12px;
+		padding: 4% 0;
 	}
 	.menu{
 		opacity: 0;
@@ -506,7 +770,7 @@ body{
 		color: white;
 	}
 	.bloc-1{
-		padding: 12%;
+		padding: 14% 12%;
 		display: flex;
 	}
 	.bloc-1-txt{
@@ -517,6 +781,10 @@ body{
 		font-size: 12px;
 		font-weight: normal;
 	}
+	.block-2{
+		width: 100%;
+		padding: 4% 0 12%;
+	}
 	.block-2-img{
 		font-size: 15px;
 		line-height: 30px;
@@ -525,6 +793,9 @@ body{
 		font-size: 12px;
 		line-height: 25px;
 		text-align: center;
+	}
+	.block-3{
+		padding: 4% 0 12%;
 	}
 	.block-3-content div{
 		border-radius: 30px;
@@ -549,11 +820,14 @@ body{
 		padding-top: 4%;
 	}
 	.bloc-3-txt-2 img{
-		width: 80%;
+		width: 95%;
 		border-radius: 20px;
 	}
+	.block-4{
+		padding-bottom: 12%;
+	}
 	.bloc-4-txt h2{
-		padding-top: 4%;
+		padding-top: 6%;
 		font-size: 15px;
 		line-height: 20px;
 	}
@@ -575,5 +849,72 @@ body{
 	    margin-top: 6%;
 	    transition: 1s;
 	    overflow: hidden;
+	}
+	.btn-2{
+	    font-size: 14px;
+	    width: 150px;
+	    margin-top: 6%;
+	    transition: 1s;
+	    overflow: hidden;
+	}
+	.block-5{
+		padding: 5% 0 12%;
+	}
+	.bloc-5-txt h2{
+		font-size: 15px;
+	}
+	.bloc-5-txt img{
+		width: 70%;
+	}
+	.block-6{
+		padding-bottom: 12%;
+	}
+	.block-6-content{
+		padding-top: 5%;
+		margin-left: 10%;
+		width: 80%;
+		display: flex;
+	}
+	.bloc-6-txt h2{
+		padding-top: 6%;
+		font-size: 15px;
+		line-height: 20px;
+	}
+	.forma {
+		margin-top: 10%;
+		padding: 6% 4% 12%;
+		width: 90%;
+	}
+	.forma p{
+		font-size: 12px;
+		line-height: 20px;
+	}
+	.forma input{
+		width: 90%;
+		font-size: 10px;
+	}
+	.forma span{
+		font-size: 10px;
+		line-height: 15px;
+	}
+	.btn-3{
+		font-size: 14px;
+	    width: 150px;
+	    margin-top: 6%;
+	    transition: 1s;
+	    overflow: hidden;
+	}
+
+	.block-7{
+		padding-bottom: 12%;
+	}
+	.bloc-7-txt h2{
+		padding-top: 6%;
+		font-size: 15px;
+		line-height: 20px;
+	}
+	.bloc-7-txt{
+		font-size: 12px;
+		line-height: 20px;
 	}
 }
