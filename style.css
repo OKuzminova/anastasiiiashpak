@@ -609,7 +609,7 @@ body{
 	.header{
 		border: none;
 		background-position: top;
-		height: 750px;
+		height: 550px;
 	}
 	.menu{
 		opacity: 0;
@@ -751,7 +751,7 @@ body{
 	.header{
 		border: none;
 		background-position: top;
-		height: 450px;
+		height: 520px;
 		/*width: 100%;*/
 	}
 	.footer p{
