@@ -166,7 +166,7 @@ body{
 .block-2{
 	width: 100%;
 	padding: 0 0 6%;
-	background-color: #E5E5E5;	
+	background-color: #B5C5C4;	
 }
 .block-2-content{
 	padding-top: 8%;
@@ -264,7 +264,7 @@ body{
 }
 .bloc-3-txt-2 img{
 	width: 70%;
-	border-radius: 50px;
+	padding-bottom: 20%;
 }
 
 
@@ -272,7 +272,7 @@ body{
 .block-4{
 	width: 100%;
 	padding-bottom: 5%;
-	background-color: #E5E5E5;	
+	background-color: #B5C5C4;	
 }
 .block-4-content{
 	padding-top: 5%;
@@ -344,7 +344,7 @@ body{
 }
 .block-5-content{
 	padding-top: 5%;
-	width: 80%;
+	text-align: center;
 	display: flex;
 }
 .bloc-5-txt h2{
@@ -353,27 +353,26 @@ body{
 	color: black;
 	text-align: center;
 	line-height: 20px;
+	padding-bottom: 15px;
 }
 .bloc-5-txt p{
 	text-align: center;
 }
-.bloc-5-txt img{
-	width: 40%;
-}
-
 
 
 /*Стили контента БЛОК 6 РЕГИСТРАЦИЯ*/
 .block-6{
 	width: 100%;
-	padding-bottom: 5%;
-/*	background-color: #E5E5E5;	*/
+	padding-bottom: 15%;
+	height: 450px;
+	background-color: #B5C5C4;	
 }
 .block-6-content{
-	padding-top: 5%;
+	padding-top: 1%;
 	margin-left: 10%;
 	width: 80%;
 	display: flex;
+
 }
 .bloc-6-txt h2{
 	padding-bottom: 4%;
@@ -384,7 +383,6 @@ body{
 	line-height: 40px;
 }
 .forma {
-	border: 4px solid black;
 	margin: auto;
 	margin-top: 4%;
 	padding: 6% 10%;
@@ -410,7 +408,7 @@ body{
     text-align: center;
     font-weight: bold;
     font-size: 22px;
-    width: 160px;
+    width: 260px;
     border-radius: 50px;
     padding: 8px 25px;
     margin-top: 1%;
@@ -432,7 +430,7 @@ body{
 .block-7{
 	width: 100%;
 	padding-bottom: 5%;
-	background-color: #E5E5E5;	
+	background-color: #B5C5C4;	
 }
 .block-7-content{
 	padding-top: 5%;
@@ -465,7 +463,54 @@ body{
 	color: #D88658;
 	text-decoration: none;
 }
-
+/*----СЛАЙДЕР-----*/
+#slides {
+	width: 800px;
+	height: 800px;
+    list-style-type: none;
+    	    margin-left: 25%;
+}
+.slide {
+	position: absolute;
+	width: 800px;
+	height: 800px;
+    opacity: 0;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+} 
+.showing {
+    opacity: 1;
+}
+.slide {
+    background-image: url(img/otziv-1.jpg);
+} 
+.slide:nth-of-type(1) {
+    background-image: url(img/otziv-1.jpg);
+    background-size: 350px 731px;
+    background-repeat: no-repeat;
+}
+.slide:nth-of-type(2) {
+    background-image: url(img/otziv-1.jpg);
+    background-size: 350px 731px;
+    background-repeat: no-repeat;
+}
+.slide:nth-of-type(3) {
+    background-image: url(img/otziv-2.jpg);
+    background-size: 350px 731px;
+    background-repeat: no-repeat;
+}
+.slide:nth-of-type(4) {
+    background-image: url(img/otziv-2.jpg);
+    background-size: 350px 731px;
+    background-repeat: no-repeat;
+}
+.slide:nth-of-type(5) {
+    background-image: url(img/otziv-1.jpg);
+    background-size: 350px 731px;
+    background-repeat: no-repeat;
+}
 @media screen and (max-width: 1200px) {
 	.bloc-2-txt{
 		font-size: 18px;
@@ -597,7 +642,6 @@ body{
 	}
 	.bloc-3-txt-2 img{
 		width: 70%;
-		border-radius: 40px;
 	}
 	.bloc-7-txt h2{
 		font-size: 25px;
@@ -672,7 +716,6 @@ body{
 	}
 	.bloc-3-txt-2 img{
 		width: 80%;
-		border-radius: 30px;
 	}
 	.bloc-4-txt h2{
 		font-size: 18px;
@@ -751,7 +794,8 @@ body{
 	.header{
 		border: none;
 		background-position: top;
-		height: 520px;
+		background-image: url(img/logo-3-sm.png);
+		height: 620px;
 		/*width: 100%;*/
 	}
 	.footer p{
@@ -765,7 +809,7 @@ body{
 		font-size: 14px;
 		color: white;
 		line-height: 20px;
-		padding-top: 50%;
+		padding-top: 65%;
 	}	
 	.title span{
 		font-size: 18px;
@@ -797,10 +841,7 @@ body{
 		text-align: center;
 	}
 	.block-3{
-		padding: 4% 0 12%;
-	}
-	.block-3-content div{
-		border-radius: 30px;
+		padding: 4% 0 2%;
 	}
 	.bloc-3-txt{
 		font-size: 12px;
@@ -811,26 +852,38 @@ body{
 		line-height: 25px;
 		text-decoration: none;
 	}
+	.block-3-content-2{
+		margin-left: 2%;
+		width: 90%;
+		display: flex;
+		text-align: center;
+	}
 	.bloc-3-txt h2{
-		font-size: 15px;
+		font-size: 18px;
 		line-height: 20px;
+		padding-top: 5%;
 	}
 	.bloc-3-txt-2 h2{
-		font-size: 15px;
+		font-size: 18px;
 		line-height: 20px;
 		padding-bottom: 8%;
 		padding-top: 4%;
 	}
 	.bloc-3-txt-2 img{
-		width: 95%;
-		border-radius: 20px;
+		width: 210px;
+		padding-bottom: 12%;
 	}
 	.block-4{
+		padding-top: 5%;
 		padding-bottom: 12%;
+	}
+	.block-4-content{
+		margin-left: 2%;
+		width: 90%;
 	}
 	.bloc-4-txt h2{
 		padding-top: 6%;
-		font-size: 15px;
+		font-size: 18px;
 		line-height: 20px;
 	}
 	.bloc-4-txt h3{
@@ -860,16 +913,14 @@ body{
 	    overflow: hidden;
 	}
 	.block-5{
-		padding: 5% 0 12%;
+		padding: 5% 0 8%;
 	}
 	.bloc-5-txt h2{
-		font-size: 15px;
-	}
-	.bloc-5-txt img{
-		width: 70%;
+		font-size: 18px;
+		padding-bottom: 1%;
 	}
 	.block-6{
-		padding-bottom: 12%;
+		padding-bottom: 1%;
 	}
 	.block-6-content{
 		padding-top: 5%;
@@ -879,12 +930,12 @@ body{
 	}
 	.bloc-6-txt h2{
 		padding-top: 6%;
-		font-size: 15px;
+		font-size: 18px;
 		line-height: 20px;
 	}
 	.forma {
 		margin-top: 10%;
-		padding: 6% 4% 12%;
+		padding: 6% 4% 5%;
 		width: 90%;
 	}
 	.forma p{
@@ -908,15 +959,65 @@ body{
 	}
 
 	.block-7{
+		padding-top: 5%;
 		padding-bottom: 12%;
 	}
 	.bloc-7-txt h2{
 		padding-top: 6%;
-		font-size: 15px;
+		font-size: 18px;
 		line-height: 20px;
 	}
 	.bloc-7-txt{
 		font-size: 12px;
 		line-height: 20px;
+	}
+
+
+	/*----СЛАЙДЕР-----*/
+	#slides {
+		width: 240px;
+		height: 500px;
+	    list-style-type: none;
+	    margin: auto;
+	}
+	.slide {
+		width: 240px;
+		height: 500px;
+	    opacity: 0;
+	    -webkit-transition: opacity 4s;
+	    -moz-transition: opacity 4s;
+	    -o-transition: opacity 4s;
+	    transition: opacity 4s;
+	} 
+	.showing {
+	    opacity: 1;
+	}
+	.slide {
+	    background-image: url(img/otziv-1.jpg);
+	} 
+	.slide:nth-of-type(1) {
+	    background-image: url(img/otziv-1.jpg);
+	    background-size: 216px 450px;
+	    background-repeat: no-repeat;
+	}
+	.slide:nth-of-type(2) {
+	    background-image: url(img/otziv-1.jpg);
+	    background-size: 216px 450px;
+	    background-repeat: no-repeat;
+	}
+	.slide:nth-of-type(3) {
+	    background-image: url(img/otziv-2.jpg);
+	    background-size: 216px 450px;
+	    background-repeat: no-repeat;
+	}
+	.slide:nth-of-type(4) {
+	    background-image: url(img/otziv-2.jpg);
+	    background-size: 216px 450px;
+	    background-repeat: no-repeat;
+	}
+	.slide:nth-of-type(5) {
+	    background-image: url(img/otziv-1.jpg);
+	    background-size: 216px 450px;
+	    background-repeat: no-repeat;
 	}
 }

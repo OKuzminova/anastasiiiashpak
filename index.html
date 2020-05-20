@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-  <title></title>
+  <title>Anastasiiiashpak</title>
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="script.js"></script>
 </head>
 <body>
   <div class="content">
@@ -26,7 +27,7 @@
         <div class="bloc-1-txt">
           <p>СТАРТ 8&nbsp;ПОТОКА – 1&nbsp;ИЮНЯ</p>
           <span>В данном марафоне собрана самая необходимая информация для достижения результата</span>
-          <p class="btn-1"><a href="#reg-form" title="Записаться">Записаться</a></p>
+          <p class="btn-1"><a href="form-reg.php" title="Записаться" target="_blank">Записаться</a></p>
         </div>
       </div>
       <!--ABOUT -->
@@ -38,7 +39,6 @@
           </div>
           <div class="bloc-2-txt">
               <p>Привет! Меня зовут Настя, работаю тренером больше 5&nbsp;лет, сертифицированный специалист. Принимала участие в конкурсе фитнес&#8209;бикини. В&nbsp;моих марафонах участвовала более 200&nbsp;девушек, каждая из них сдивинулась с мертвой точки и получила огромную мотивациию.</p>
-              <p><a href="#result-marafon" title="Посмотреть результаты">Посмотреть результаты&nbsp;<img src="pointing.svg" width="3%"></a></p>
           </div>
         </div>
       </div>
@@ -54,20 +54,22 @@
             <p>В закрытом профиле марафона я буду выходить в прямой эфир, где буду отвечать на все интересующие Вас вопросы, объяснять технику упражнений и заряжать Вас на дальнейшую работу.</p>
           </div>
         </div>
-        <div class="block-3-content-2">
-          <div class="bloc-3-txt-2">
-          	<h2><a name="result-marafon"></a>РЕЗУЛЬТАТЫ УЧАСТНИЦ</h2>
-          	<p><img src="img/result-1.jpg"></p>
-         </div>
       </div>
     </div>
       <!--END О МАРАФОНЕ -->
-            <!--ОТЗЫВЫ-->
+      <!--ОТЗЫВЫ-->
       <div class="block-5">
         <div class="block-5-content">
         	<div class="bloc-5-txt">
         		<h2>ОТЗЫВЫ</h2>
-        		<p><img src="img/otziv-1.jpg" alt="Отзыв 1"></p>
+        		<!--<p><img src="img/otziv-1.jpg" alt="Отзыв 1"></p>-->
+				<ul id="slides">
+				    <li class="slide showing"></li>
+				    <li class="slide"></li>
+				    <li class="slide"></li>
+				    <li class="slide"></li>
+				    <li class="slide"></li>
+				</ul>
         	</div>
         </div>
       </div>
@@ -79,54 +81,26 @@
         		<h2>СТОИМОСТЬ МАРАФОНА</h2>
         		<h3>990 руб.</h3>
         		<h4>Цена одной персональной тренировки в зале</h4>
-        		<p><!--<span>&nbsp;&nbsp;!&nbsp;&nbsp;</span>&nbsp;-->Сколько всего полезного Вы для себя почерпнёте, всего за&nbsp;<strong>47&nbsp;рублей в&nbsp;день</strong>.</p>
-        		<p>Добиться качественного результата, <strong>без вреда для здоровья</strong>, можно только под контролем грамотного тренера! Мы не будем бороться за призы, мы будем стремиться улучшить наше здоровье,  привести тело в порядок. <strong>Новые полезные привычки</strong> внесут в вашу жизнь коррективы, которые положительно будут отражаться на вас как внешне, так и внутренне. </p>
-        		<p><strong>Готова присоединиться к команде?</strong> Жми кнопку ЗАПИСАТЬСЯ!</p>
-        		<p class="btn-2"><a href="#reg-form" title="Записаться">Записаться</a></p>
+        		<!--<p><span>&nbsp;&nbsp;!&nbsp;&nbsp;</span>&nbsp;Сколько всего полезного Вы для себя почерпнёте, всего за&nbsp;<strong>47&nbsp;рублей в&nbsp;день</strong>.</p>
+        		<p>Добиться качественного результата, <strong>без вреда для здоровья</strong>, можно только под контролем грамотного тренера! Мы не будем бороться за призы, мы будем стремиться улучшить наше здоровье,  привести тело в порядок. <strong>Новые полезные привычки</strong> внесут в вашу жизнь коррективы, которые положительно будут отражаться на вас как внешне, так и внутренне. </p>-->
+        		<p><strong>Готова присоединиться к команде?</strong><br/> Жми кнопку ЗАПИСАТЬСЯ!</p>
+        		<p class="btn-2"><a href="form-reg.php" title="Записаться"  target="_blank">Записаться</a></p>
         	</div>
         </div>
       </div>
       <!--END ЦЕНА -->
-      <!--РЕГИСТРАЦИЯ-->
-      <div class="block-6">
-        <div class="block-6-content">
-        	<div class="bloc-6-txt">
-					<form method="post" action="index.php">
-					<table class="forma">
-						<tr>
-							<td colspan="2"><a name="reg-form"></a><h2>РЕГИСТРАЦИЯ</h2></td>
-						</tr>
-						<tr>
-							<td><p>Ф.И.О.</p></td><!--__Поле таблицы №1___-->
-							<td><input type="text" name="name" placeholder="Введите имя" class="one"></td>
-						</tr>
-						<tr>
-							<td align="left"><p>Ваш инстаграм</p></td><!--__Поле таблицы №2___-->
-							<td><input type="text" name="inst" placeholder="Введите никнейм" class="one" class="inpt"></td>
-						</tr>
-						<tr>
-							<td><p>Телефон</p></td><!--__Поле таблицы №3___-->
-							<td><input type="tel" name="tel" placeholder="+7 (978) 000-00-00" pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"></td>
-						</tr>
-						<tr>
-							<td><p>Почта</p></td><!--__Поле таблицы №4___-->
-							<td><input type="text" name="email" placeholder="E-mail" class="one"></td>
-						</tr>
-						<tr>
-							<td colspan="2"><span>Если вы согласны на обрботку ваших персональных данных нажмите кнопку "Оплатить"</span>
-							</td>
-						</tr>
-						<tr>
-							<td colspan="2">
-								<p class="btn-3"><a href="#" title="Оплатить">Оплатить</a></p>
-							</td>
-						</tr>
-					</table>
-				</form>
-        	</div>
-        </div>
+      <!--ОТЗЫВЫ-->
+      <div class="block-3">
+      	<div class="block-3-content">
+        <div class="block-3-content-2">
+          <div class="bloc-3-txt-2">
+          	<h2><a name="result-marafon"></a>РЕЗУЛЬТАТЫ УЧАСТНИЦ</h2>
+          	<p><img src="img/result-1.jpg"></p>
+         </div>
+     	</div>
+      	</div>
       </div>
-      <!--END РЕГИСТРАЦИЯ -->
+      <!--END ОТЗЫВЫ -->
       <!--КОНТАКТЫ -->
       <div class="block-7">
         <div class="block-7-content">
@@ -136,6 +110,7 @@
 	          <ul type="circle">
 	          	<li><span>Instagram: <strong><a href="https://www.instagram.com/anastasiiiashpak/" target="_blank" title="anastasiiiashpak">anastasiiiashpak</a></strong></span></li>
 	          	<li><span>VK: <strong><a href="https://vk.com/anastasia_kuzminova" target="_blank" title="Anastasia Shpak">Anastasia Shpak</a></strong></span></li>
+	          	<li><span>Почта: <strong><a href="mailto:shpak.coach@list.ru" title="Anastasia Shpak">shpak.coach@list.ru</a></strong></span></li>
 	        </div>
         </div>
       </div>
@@ -146,5 +121,6 @@
       	<p>© 2020</p>
       </div>
   </div>
+    <script src="script.js"></script>
 </body>
 </html>
