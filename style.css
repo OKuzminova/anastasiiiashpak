@@ -53,26 +53,36 @@
 body{
   	font-family: 'Montserrat';
   	font-style: normal;
-  	font-size: 16px;
+  	font-size: 18px;
   	line-height: 1.2;
   	font-weight: normal;
   	color: black;
 }
 .content{
 	width: 100%;
-	display: -webkit-flex; 
 	display: flex; 
 	flex-direction: column;
 }
 .header{
 	width: 100%;
-	height: 900px;
+	height: 1050px;
 	background-image: url(img/logo-3.png);
 	background-repeat: no-repeat;
 	background-size: 100%;
 	background-position: center;
+}
+.title{
+	padding-top: 22%;
 	display: flex;
-	flex-direction: column;
+	justify-content: center;
+	font-size: 32px;
+	color: white;
+	text-align: center;
+	line-height: 32px;
+}
+.title span{
+	font-size: 34px;
+	font-weight: bold;
 }
 .footer{
 	width: 100%;
@@ -82,55 +92,23 @@ body{
 .footer p{
 	width: 80%;
 	padding: 2% 0 2%;
-	font-size: 18px;
 }
-.menu{
-	width: 80%;
-	height: 40px;
-	display: inline-flex;
-}
-.menu div{
-	width: 10%;
-	height: 40px;
-	display: inline-flex;
-	justify-content: space-between;
-}
-.title{
-	padding-top: 22%;
-	display: flex;
-	justify-content: center;
-	align-self: center;
-	align-items: center;
-	font-size: 30px;
-	color: white;
-	text-align: center;
-	line-height: 30px;
-}
-.title span{
-	font-size: 32px;
-	font-weight: bold;
-}
+
 
 /*Стили контента*/
 .main-content{
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	align-self: flex-start;
 }
 /*Стили контента БЛОК 1*/
 .bloc-1{
-	width: 80%;
+	width: 60%;
 	padding: 8%;
-	display: flex;
-	align-items: flex-start;
-	align-self: flex-start;
 }
 .bloc-1-txt{
-	width: 80%;
 	font-size: 28px;
 	font-weight: bold;
-	color: black;
 	text-align: center;
 	line-height: 40px;
 }
@@ -139,94 +117,69 @@ body{
 	font-weight: normal;
 }
 .btn-1{
-    text-align: center;
-    font-weight: bold;
     font-size: 22px;
-    width: 160px;
+    width: 220px;
     border-radius: 50px;
     border: 4px solid black;
-    padding: 8px 25px;
-    margin-top: 1%;
-    transition: 1s;
-    overflow: hidden;
+    background-color: white;
+    margin-top: 2%;
+    padding: 10px 25px;
 }
-.btn-1 a{
-    color: black;
-    text-decoration: none;
-}
-.btn-1 a:hover{
-	color: #D88658;
-	transition: 1.5s;
-	overflow: hidden;
-}
+.btn-1:hover{
+    border: 4px solid #D88658;
+	background-color: #D88658;
+}	
 
-
-
-/*Стили контента БЛОК 2*/
+/*---------------------------- Стили контента БЛОК 2 ----------------------------*/
 .block-2{
 	width: 100%;
-	padding: 0 0 6%;
-	background-color: #B5C5C4;	
+	padding: 8% 0;
+	display: flex;
+	background-color: #CBC1B9;	
 }
 .block-2-content{
-	padding-top: 8%;
-	margin-left: 10%;
-	width: 80%;
+	width: 70%;
 	display: inline-flex;
+	align-items: justify-content;
 	text-align: center;
 }
 .block-2-content div{
 	justify-content: space-between;
 	width: 50%;
 }
-.block-2-img{
+.block-2-img img{
+	width: 80%;
+}
+.block-2-txt h3{
 	font-size: 28px;
 	font-weight: bold;
 	color: black;
 	line-height: 50px;
 }
-.block-2-img img{
-	width: 70%;
-}
 .bloc-2-txt{
 	font-size: 22px;
-	font-weight: normal;
 	line-height: 40px;
 	text-align: left;
 }
-.bloc-2-txt a{
-	text-decoration: none;
-	color: black;
-	font-weight: bold;
-}
-.bloc-2-txt a:hover{
-	color: #D88658;
-}
 
-/*Стили контента БЛОК 3 О МАРАФОНЕ*/
-.block-3{
+/*---------------------------- Стили контента БЛОК 3 О МАРАФОНЕ ----------------------------*/
+.bloc-3{
 	width: 100%;
-	padding: 1% 0 0;
-	/*background-color: #9F957E;*/	
 }
 .block-3-content{
-	padding-top: 3%;
-	margin-left: 10%;
-	width: 80%;
+	width: 70%;
+	padding-top: 8%;
 	display: flex;
+	flex-direction: column;
+	align-items: justify-content;
 	text-align: center;
-}
-.block-3-content div{
-	padding: 2%;
-	/*border: 4px solid #E5E5E5;*/
-	border-radius: 50px;
 }
 .bloc-3-txt h2{
 	font-size: 28px;
 	font-weight: bold;
-	color: black;
 	text-align: center;
 	line-height: 40px;
+	margin-bottom: 1%;
 }
 .bloc-3-txt{
 	font-size: 22px;
@@ -234,130 +187,261 @@ body{
 	line-height: 40px;
 	text-align: left;
 }
-.bloc-3-txt span{
-	font-size: 22px;
-	text-decoration: underline;
-}
 .bloc-3-txt p{
-	padding-top: 10px;
+	padding-top: 20px;
 }
-
-/*РЕЗУЛЬТАТЫ УЧАСТНИЦ*/
-.block-3-content-2{
-	margin-left: 10%;
-	width: 80%;
+/*------------ Стили контента БЛОК 3 ОТЗЫВЫ (Слайдер) ------------*/
+.bloc-3-slider {
+	width: 70%;
+	padding: 2% 8% 8%;
 	display: flex;
-	text-align: center;
+	flex-direction: column;
+	align-items: justify-content;
 }
-.block-3-content-2 div{
-	padding: 6% 6% 0;
-	/*border: 4px solid yellow;*/
-	border-radius: 50px;
-}
-.bloc-3-txt-2 h2{
+.bloc-3-slider h2{
+	position: relative;
+	padding-top: 8%;
 	font-size: 28px;
 	font-weight: bold;
-	color: black;
-	text-align: center;
-	line-height: 40px;
-	padding-bottom: 4%;
+	line-height: 20px;
+	padding-bottom: 15px;
 }
-.bloc-3-txt-2 img{
-	width: 70%;
-	padding-bottom: 20%;
+/* Cлайдер */
+.slider{
+    max-width: 60%;
+    position: relative;
+    height: 700px;
+}
+/* Картинка мастабируется по отношению к родительскому элементу */
+.slider .item img {
+    object-fit: cover;
+    width: 100%;
+    height: 700px;
+    border: none !important;
+    box-shadow: none !important;
+}
+/* Кнопки вперед и назад */
+.slider .prev, .slider .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    margin: 0 -70%;
+    padding: 14px;
+    font-weight: bold;
+    font-size: 22px;
+    transition: 0.6s ease;
+}
+.slider .next{
+    right: 50%;
+    border-radius: 0 50px 50px 0;
+}
+.prev{
+    border-radius: 50px 0 0 50px;
+}
+/* При наведении на кнопки добавляем фон кнопок */
+.slider .prev:hover,
+.slider .next:hover {
+    background-color: rgba(216, 134, 88, 0.8);
+    opacity: 0.6;
+}
+/* Кружочки */
+.slider-dots {
+    text-align: center;
+}
+.slider-dots_item{
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 2px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active,
+.slider-dots_item:hover {
+    background-color: #aaa;
+}
+/* Анимация слайдов */
+.slider .item {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
 }
 
 
-/*Стили контента БЛОК 4 ЦЕНЫ*/
+/*---------------------------- Стили контента БЛОК 4 СТОИМОСТЬ МАРАФОНА ----------------------------*/
 .block-4{
 	width: 100%;
-	padding-bottom: 5%;
-	background-color: #B5C5C4;	
+	padding: 8% 0;
+	display: flex;
+	background-color: #CBC1B9;	
 }
 .block-4-content{
-	padding-top: 5%;
-	margin-left: 10%;
-	width: 80%;
-	display: flex;
+	width: 70%;
+	text-align: center;
 }
 .bloc-4-txt h2{
 	font-size: 28px;
 	font-weight: bold;
-	color: black;
-	text-align: center;
 	line-height: 40px;
+	margin-bottom: 1%;
 }
 .bloc-4-txt h3{
 	font-size: 30px;
 	font-weight: bold;
 	color: #D88658;
-	text-align: center;
 	line-height: 40px;
 	text-shadow: #D88658 3px 2px 5px;
 }
 .bloc-4-txt h4{
-	font-size: 12px;
-	text-align: center;
+	font-size: 16px;
 	line-height: 30px;
 	font-weight: normal;
 }
-.bloc-4-txt span{
-	border: 2px solid black;
-	border-radius: 100%;
-	font-weight: bold;
-	font-size: 22px;
-}
-.bloc-4-txt{
-	font-size: 22px;
-	font-weight: normal;
-	line-height: 40px;
-}
-.bloc-4-txt p{
-	padding-top: 10px;
-}
 .btn-2{
-    text-align: center;
-    font-weight: bold;
     font-size: 22px;
-    width: 160px;
+    width: 220px;
     border-radius: 50px;
-    padding: 8px 25px;
-    margin-top: 1%;
+    border: 4px solid #D88658;
     background-color: #D88658;
-    transition: 1s;
-    overflow: hidden;
+    margin-top: 2%;
+    padding: 10px 25px;
+
 }
-.btn-2 a{
-    color: black;
-    text-decoration: none;
-}
-.btn-2 a:hover{
-	color: white;
-	transition: 1.5s;
-	overflow: hidden;
+.btn-2:hover{
+    border: 4px solid #D88658;
+	background-color: #D88658;
+	box-shadow: #D88658 0px 0px 12px;
 }
 
-/*Стили контента БЛОК 5 ОТЗЫВЫ*/
+/*---------------------------- Стили контента БЛОК 5 РЕЗУЛЬТАТЫ УЧАСТНИЦ ----------------------------*/
 .block-5{
 	width: 100%;
-	padding-bottom: 5%;
 }
 .block-5-content{
-	padding-top: 5%;
-	text-align: center;
+	width: 70%;
+	padding: 8%;
 	display: flex;
+	flex-direction: column;
+	align-items: justify-content;
+	text-align: center;
 }
-.bloc-5-txt h2{
+/*------------ Стили контента БЛОК 5 РЕЗУЛЬТАТЫ УЧАСТНИЦ (Слайдер) ------------*/
+.block-5-slider{
+	width: 70%;
+	padding: 0% 8% 0%;
+	display: flex;
+	flex-direction: column;
+	align-items: justify-content;
+}
+.block-5-slider h2{
+	position: relative;
 	font-size: 28px;
 	font-weight: bold;
-	color: black;
-	text-align: center;
 	line-height: 20px;
 	padding-bottom: 15px;
+	margin-bottom: 3%;
 }
-.bloc-5-txt p{
-	text-align: center;
+/* Cлайдер */
+.slider-2{
+    max-width: 70%;
+    position: relative;
+    height: 600px;
 }
+/* Картинка мастабируется по отношению к родительскому элементу */
+.slider-2 .item-2 img {
+    object-fit: cover;
+    width: 100%;
+    height: 600px;
+    border: none !important;
+    box-shadow: none !important;
+}
+/* Кнопки вперед и назад */
+.slider-2 .prev-2, .slider-2 .next-2 {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    margin: 0 -70%;
+    padding: 14px;
+    font-weight: bold;
+    font-size: 22px;
+    transition: 0.6s ease;
+}
+.slider-2 .next-2{
+    right: 50%;
+    border-radius: 0 50px 50px 0;
+}
+.prev-2{
+    border-radius: 50px 0 0 50px;
+}
+/* При наведении на кнопки добавляем фон кнопок */
+.slider-2 .prev-2:hover,
+.slider-2 .next-2:hover {
+    background-color: rgba(216, 134, 88, 0.8);
+    opacity: 0.6;
+}
+/* Кружочки */
+.slider-dots-2 {
+    text-align: center;
+    padding-top: 2%;
+}
+.slider-dots-2_item-2{
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 2px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active-2,
+.slider-dots-2_item-2:hover {
+    background-color: #aaa;
+}
+/* Анимация слайдов */
+.slider-2 .item-2 {
+    -webkit-animation-name: fade-new;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade-new {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+@keyframes fade-new {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
 
 
 /*Стили контента БЛОК 6 РЕГИСТРАЦИЯ*/
@@ -365,7 +449,7 @@ body{
 	width: 100%;
 	padding-bottom: 15%;
 	height: 450px;
-	background-color: #B5C5C4;	
+	background-color: #CBC1B9;	
 }
 .block-6-content{
 	padding-top: 1%;
@@ -426,24 +510,23 @@ body{
 	overflow: hidden;
 }
 
-/*Стили контента БЛОК 7 КОНТАКТЫ*/
+
+
+/*---------------------------- Стили контента БЛОК 7 КОНТАКТЫ ----------------------------*/
 .block-7{
 	width: 100%;
-	padding-bottom: 5%;
-	background-color: #B5C5C4;	
+	padding: 8% 0;
+	background-color: #CBC1B9;	
 }
 .block-7-content{
-	padding-top: 5%;
-	margin-left: 10%;
-	width: 80%;
-	display: flex;
+	width: 70%;
 }
 .bloc-7-txt h2{
 	font-size: 28px;
 	font-weight: bold;
-	color: black;
-	text-align: center;
 	line-height: 40px;
+	margin-bottom: 1%;
+	text-align: center;
 }
 .bloc-7-txt{
 	font-size: 22px;
@@ -463,64 +546,24 @@ body{
 	color: #D88658;
 	text-decoration: none;
 }
-/*----СЛАЙДЕР-----*/
-#slides {
-	width: 800px;
-	height: 800px;
-    list-style-type: none;
-    	    margin-left: 25%;
-}
-.slide {
-	position: absolute;
-	width: 800px;
-	height: 800px;
-    opacity: 0;
-    -webkit-transition: opacity 1s;
-    -moz-transition: opacity 1s;
-    -o-transition: opacity 1s;
-    transition: opacity 1s;
-} 
-.showing {
-    opacity: 1;
-}
-.slide {
-    background-image: url(img/otziv-1.jpg);
-} 
-.slide:nth-of-type(1) {
-    background-image: url(img/otziv-1.jpg);
-    background-size: 350px 731px;
-    background-repeat: no-repeat;
-}
-.slide:nth-of-type(2) {
-    background-image: url(img/otziv-1.jpg);
-    background-size: 350px 731px;
-    background-repeat: no-repeat;
-}
-.slide:nth-of-type(3) {
-    background-image: url(img/otziv-2.jpg);
-    background-size: 350px 731px;
-    background-repeat: no-repeat;
-}
-.slide:nth-of-type(4) {
-    background-image: url(img/otziv-2.jpg);
-    background-size: 350px 731px;
-    background-repeat: no-repeat;
-}
-.slide:nth-of-type(5) {
-    background-image: url(img/otziv-1.jpg);
-    background-size: 350px 731px;
-    background-repeat: no-repeat;
-}
+
+
+
 @media screen and (max-width: 1200px) {
-	.bloc-2-txt{
-		font-size: 18px;
-		line-height: 30px;
+	.bloc-2-txt, .bloc-3-txt{
+		font-size: 20px;
 	}
-	.btn-1{
-    	margin-top: 2%;
+	.slider{
+	    height: 600px;
 	}
-	.btn-2{
-    	margin-top: 2%;
+	.slider .item img {
+	    height: 600px;
+	}
+	.slider-2{
+	    height: 400px;
+	}
+	.slider-2 .item-2 img {
+	    height: 400px;
 	}
 }
 @media screen and (max-width: 940px) {
@@ -540,23 +583,27 @@ body{
 		line-height: 35px;
 		text-align: center;
 	}
-	.bloc-3-txt{
+	.bloc-3-txt, .bloc-4-txt, .bloc-7-txt{
 		font-size: 20px;
 		line-height: 35px;
 	}
-	.bloc-3-txt span{
-		font-size: 20px;
+	.slider{
+	    height: 500px;
 	}
-	.bloc-4-txt{
-		font-size: 20px;
-		line-height: 35px;
+	.slider .item img {
+	    height: 500px;
 	}
-	.btn-1{
-		font-size: 20px;
+	.slider-2{
+	    height: 350px;
 	}
-	.btn-2{
-		font-size: 20px;
+	.slider-2 .item-2 img {
+	    height: 350px;
 	}
+	.footer p{
+		font-size: 16px;
+	}
+
+	/*Стили для формы*/
 	.btn-3{
 		font-size: 20px;
 		margin-top: 4%;
@@ -588,33 +635,20 @@ body{
 	.forma span{
 		font-size: 16px;
 	}
-	.bloc-7-txt{
-		font-size: 20px;
-		line-height: 35px;
-	}
-	.footer p{
-		font-size: 16px;
-	}
+	/*Стили для формы*/
 }	
 @media screen and (max-width: 800px) {
 	.header{
 		background-position: top;
 		height: 800px;
 	}
-	.menu{
-		opacity: 0.1;
-	}
 	.title{
 		font-size: 24px;
 		line-height: 20px;
-		padding-top: 40%;
+		padding-top: 60%;
 	}
 	.title span{
 		font-size: 26px;
-	}
-	.bloc-1{
-		padding: 8%;
-		display: flex;
 	}
 	.bloc-1-txt{
 		font-size: 25px;
@@ -622,9 +656,8 @@ body{
 	}
 	.bloc-1-txt span{
 		font-size: 22px;
-		font-weight: normal;
 	}
-	.block-2-img{
+	.block-2-txt h3{
 		font-size: 26px;
 		line-height: 50px;
 	}
@@ -632,55 +665,48 @@ body{
 		width: 60%;
 		border-radius: 50%;
 	}
-	.bloc-3-txt h2{
+	.bloc-3-txt h2, .bloc-3-slider h2, .bloc-4-txt h2, .block-5-slider h2, .bloc-7-txt h2{
 		font-size: 25px;
 		line-height: 30px;
 	}
-	.bloc-3-txt-2 h2{
-		font-size: 25px;
-		line-height: 30px;
+	.slider{
+	    height: 400px;
 	}
-	.bloc-3-txt-2 img{
-		width: 70%;
+	.slider .item img {
+	    height: 400px;
 	}
-	.bloc-7-txt h2{
-		font-size: 25px;
-		line-height: 30px;
+	.slider-2{
+	    height: 300px;
+	}
+	.slider-2 .item-2 img {
+	    height: 300px;
 	}
 }
 
 @media screen and (max-width: 640px) {
 	.header{
-		border: none;
-		background-position: top;
 		height: 550px;
-	}
-	.menu{
-		opacity: 0;
 	}
 	.title{
 		font-size: 16px;
-		color: white;
-		line-height: 20px;
-		padding-top: 50%;
+		line-height: 16px;
+		padding-top: 62%;
 	}	
 	.title span{
 		font-size: 20px;
-		color: white;
 	}
 	.bloc-1{
 		padding-top: 10%;
-		display: flex;
 	}
-	.bloc-1-txt{
-		font-size: 18px;
+	.bloc-1-txt, .bloc-3-txt, .bloc-4-txt, .bloc-7-txt{
+		font-size: 16px;
 		line-height: 25px;
 	}
 	.bloc-1-txt span{
 		font-size: 16px;
 		font-weight: normal;
 	}
-	.block-2-img{
+	.block-2-txt h3{
 		font-size: 18px;
 		line-height: 40px;
 	}
@@ -693,59 +719,88 @@ body{
 		line-height: 25px;
 		text-align: center;
 	}
-	.bloc-3-txt{
-		font-size: 16px;
-		line-height: 25px;
-	}
 	.bloc-3-txt span{
 		font-size: 16px;
 		line-height: 25px;
 	}
-	.bloc-3-txt h2{
+	.bloc-3-txt h2, .bloc-3-slider h2, .bloc-4-txt h2, .block-5-slider h2, .bloc-7-txt h2{
 		font-size: 18px;
 		line-height: 25px;
 	}
 	.block-3-content div{
 		border-radius: 40px;
 	}
-	.bloc-3-txt-2 h2{
-		font-size: 18px;
-		line-height: 25px;
-		padding-bottom: 6%;
-		padding-top: 2%;
-	}
-	.bloc-3-txt-2 img{
-		width: 80%;
-	}
-	.bloc-4-txt h2{
-		font-size: 18px;
-		line-height: 25px;
-	}
 	.bloc-4-txt h3{
 		font-size: 20px;
 		line-height: 25px;
 	}
 	.bloc-4-txt h4{
-		font-size: 10px;
+		font-size: 14px;
 		line-height: 25px;
 	}
-	.bloc-4-txt{
-		font-size: 16px;
-		line-height: 25px;
-	}
-	.btn-1{
+	.btn-1, .btn-2{
 		font-size: 16px;
 		margin-top: 4%;
 	}
-	.btn-2{
-		font-size: 16px;
-		margin-top: 4%;
+	.slider{
+	    height: 200px;
 	}
-	.bloc-5-txt h2{
-		font-size: 18px;
-		line-height: 25px;
+	.slider .item img {
+	    height: 200px;
 	}
-
+	.slider-dots_item{
+	    height: 6px;
+	    width: 6px;
+	    transition: background-color 0.8s ease;
+	}
+	/* Кнопки вперед и назад */
+	.slider .prev, .slider .next {
+	    cursor: pointer;
+	    position: absolute;
+	    top: 40%;
+	    margin: 0 -80%;
+	    padding: 14px;
+	    font-weight: bold;
+	    font-size: 20px;
+	    transition: 0.6s ease;
+	}
+	.slider .next{
+	    right: 50%;
+	    border-radius: 0 30px 30px 0;
+	}
+	.prev{
+	    border-radius: 30px 0 0 30px;
+	}
+	.slider-2{
+	    height: 200px;
+	}
+	.slider-2 .item-2 img {
+	    height: 200px;
+	}
+	.slider-dots-2_item-2{
+	    height: 6px;
+	    width: 6px;
+	    transition: background-color 0.8s ease;
+	}
+	/* Кнопки вперед и назад */
+	.slider-2 .prev-2, .slider-2 .next-2 {
+	    cursor: pointer;
+	    position: absolute;
+	    top: 40%;
+	    margin: 0 -80%;
+	    padding: 14px;
+	    font-weight: bold;
+	    font-size: 20px;
+	    transition: 0.6s ease;
+	}
+	.slider-2 .next-2{
+	    right: 50%;
+	    border-radius: 0 30px 30px 0;
+	}
+	.prev-2{
+	    border-radius: 30px 0 0 30px;
+	}
+	/*Стили для формы*/
 	.block-6{
 		padding-bottom: 12%;
 	}
@@ -781,45 +836,34 @@ body{
 		font-size: 16px;
 		margin-top: 4%;
 	}
-	.bloc-7-txt h2{
-		font-size: 18px;
-		line-height: 25px;
-	}
-	.bloc-7-txt{
-		font-size: 16px;
-		line-height: 25px;
-	}
+	/*Стили для формы*/
 }
 @media screen and (max-width: 380px) {
 	.header{
 		border: none;
 		background-position: top;
-		background-image: url(img/logo-3-sm.png);
-		height: 635px;
+		background-image: url(img/logo-3-sm-new.png);
+		height: 660px;
 		/*width: 100%;*/
 	}
 	.footer p{
 		font-size: 12px;
 		padding: 4% 0;
 	}
-	.menu{
-		opacity: 0;
-	}
 	.title{
-		font-size: 14px;
+		font-size: 15px;
 		color: white;
-		line-height: 20px;
-		padding-top: 65%;
+		line-height: 15px;
+		padding-top: 79%;
 	}	
 	.title span{
-		font-size: 18px;
+		font-size: 19px;
 		color: white;
 	}
-	.bloc-1{
-		padding: 14% 12%;
-		display: flex;
+	.bloc-1, .block-4, .block-5, .block-7{
+		padding: 14% 0;
 	}
-	.bloc-1-txt{
+	.bloc-1-txt, .block-2-txt h3{
 		font-size: 15px;
 		line-height: 20px;
 	}
@@ -829,96 +873,52 @@ body{
 	}
 	.block-2{
 		width: 100%;
-		padding: 4% 0 12%;
+		padding: 12% 0 12%;
 	}
-	.block-2-img{
-		font-size: 15px;
-		line-height: 30px;
-	}
-	.bloc-2-txt{
+	.bloc-2-txt, .bloc-3-txt{
 		font-size: 12px;
 		line-height: 25px;
-		text-align: center;
 	}
 	.block-3{
 		padding: 4% 0 2%;
-	}
-	.bloc-3-txt{
-		font-size: 12px;
-		line-height: 25px;
 	}
 	.bloc-3-txt span{
 		font-size: 12px;
 		line-height: 25px;
 		text-decoration: none;
 	}
-	.block-3-content-2{
-		margin-left: 2%;
-		width: 90%;
-		display: flex;
-		text-align: center;
-	}
-	.bloc-3-txt h2{
+	.bloc-3-txt h2, .bloc-3-slider h2, .bloc-4-txt h2, .block-5-slider h2, .bloc-7-txt h2{
 		font-size: 18px;
 		line-height: 20px;
-		padding-top: 5%;
-	}
-	.bloc-3-txt-2 h2{
-		font-size: 18px;
-		line-height: 20px;
-		padding-bottom: 8%;
-		padding-top: 4%;
-	}
-	.bloc-3-txt-2 img{
-		width: 210px;
-		padding-bottom: 12%;
-	}
-	.block-4{
-		padding-top: 5%;
-		padding-bottom: 12%;
-	}
-	.block-4-content{
-		margin-left: 2%;
-		width: 90%;
-	}
-	.bloc-4-txt h2{
-		padding-top: 6%;
-		font-size: 18px;
-		line-height: 20px;
+		padding: 5% 0 1%;
 	}
 	.bloc-4-txt h3{
-		font-size: 17px;
-		line-height: 20px;
+		font-size: 20px;
+		line-height: 30px;
 	}
 	.bloc-4-txt h4{
-		font-size: 6px;
+		font-size: 9px;
 		text-align: center;
 		line-height: 20px;
 	}
 	.bloc-4-txt{
 		font-size: 12px;
 	}
-	.btn-1{
-	    font-size: 14px;
-	    width: 150px;
-	    margin-top: 6%;
-	    transition: 1s;
-	    overflow: hidden;
+	.bloc-7-txt{
+		font-size: 12px;
+		line-height: 20px;
 	}
-	.btn-2{
-	    font-size: 14px;
-	    width: 150px;
-	    margin-top: 6%;
-	    transition: 1s;
-	    overflow: hidden;
+	.btn-1, .btn-2{
+		font-size: 14px;
+		margin-top: 2%;
 	}
-	.block-5{
-		padding: 5% 0 8%;
+	.slider-2{
+	    height: 150px;
 	}
-	.bloc-5-txt h2{
-		font-size: 18px;
-		padding-bottom: 1%;
+	.slider-2 .item-2 img {
+	    height: 150px;
 	}
+	/*Стили для формы*/
 	.block-6{
 		padding-bottom: 1%;
 	}
@@ -958,66 +958,4 @@ body{
 	    overflow: hidden;
 	}
 
-	.block-7{
-		padding-top: 5%;
-		padding-bottom: 12%;
-	}
-	.bloc-7-txt h2{
-		padding-top: 6%;
-		font-size: 18px;
-		line-height: 20px;
-	}
-	.bloc-7-txt{
-		font-size: 12px;
-		line-height: 20px;
-	}
-
-
-	/*----СЛАЙДЕР-----*/
-	#slides {
-		width: 240px;
-		height: 500px;
-	    list-style-type: none;
-	    margin: auto;
-	}
-	.slide {
-		width: 240px;
-		height: 500px;
-	    opacity: 0;
-	    -webkit-transition: opacity 4s;
-	    -moz-transition: opacity 4s;
-	    -o-transition: opacity 4s;
-	    transition: opacity 4s;
-	} 
-	.showing {
-	    opacity: 1;
-	}
-	.slide {
-	    background-image: url(img/otziv-1.jpg);
-	} 
-	.slide:nth-of-type(1) {
-	    background-image: url(img/otziv-1.jpg);
-	    background-size: 216px 450px;
-	    background-repeat: no-repeat;
-	}
-	.slide:nth-of-type(2) {
-	    background-image: url(img/otziv-1.jpg);
-	    background-size: 216px 450px;
-	    background-repeat: no-repeat;
-	}
-	.slide:nth-of-type(3) {
-	    background-image: url(img/otziv-2.jpg);
-	    background-size: 216px 450px;
-	    background-repeat: no-repeat;
-	}
-	.slide:nth-of-type(4) {
-	    background-image: url(img/otziv-2.jpg);
-	    background-size: 216px 450px;
-	    background-repeat: no-repeat;
-	}
-	.slide:nth-of-type(5) {
-	    background-image: url(img/otziv-1.jpg);
-	    background-size: 216px 450px;
-	    background-repeat: no-repeat;
-	}
 }
