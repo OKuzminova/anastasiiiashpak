@@ -967,5 +967,17 @@ body{
 	    transition: 1s;
 	    overflow: hidden;
 	}
-
+	@media screen and (max-width: 380px) {
+	.slider{
+    	height: 200px;
+	}
+	.slider .item img {
+	    height: 200px;
+	}
+	.slider-2{
+	    height: 120px;
+	}
+	.slider-2 .item-2 img {
+	    height: 120px;
+	}
 }
