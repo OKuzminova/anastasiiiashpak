@@ -118,7 +118,7 @@ body{
     border-radius: 50px;
     border: 4px solid black;
     background-color: white;
-    margin-top: 2%;
+    margin-top: 3%;
     padding: 10px 25px;
 }
 .btn-1:hover{
@@ -301,14 +301,11 @@ body{
 	margin-bottom: 1%;
 }
 .bloc-4-txt h3{
-	font-size: 30px;
+	font-size: 38px;
 	font-weight: bold;
 	color: #D88658;
 	line-height: 40px;
-	text-shadow: 1px 0 1px #000, 
-	0 1px 1px #000, 
-	-1px 0 1px #000, 
-	0 -1px 1px #000;
+	margin-bottom: 1%;
 }
 .bloc-4-txt h4{
 	font-size: 16px;
@@ -723,7 +720,7 @@ body{
 		border-radius: 40px;
 	}
 	.bloc-4-txt h3{
-		font-size: 20px;
+		font-size: 28px;
 		line-height: 25px;
 	}
 	.bloc-4-txt h4{
@@ -748,10 +745,10 @@ body{
 	}
 	.slider{
     	max-width: 80%;
-	    height: 350px;
+	    height: 300px;
 	}
 	.slider .item img {
-	    height: 350px;
+	    height: 300px;
 	}
 	.slider-dots_item{
 	    height: 6px;
@@ -779,11 +776,11 @@ body{
 	/*------------ Стили контента БЛОК 5 РЕЗУЛЬТАТЫ УЧАСТНИЦ (Слайдер) ------------*/
 	.slider-2{
 	    max-width: 80%;
-	    height: 190px;
+	    height: 130px;
 	}
 	/* Картинка мастабируется по отношению к родительскому элементу */
 	.slider-2 .item-2 img {
-	    height: 190px;
+	    height: 130px;
 	}
 	.slider-dots-2_item-2{
 	    height: 6px;
@@ -851,7 +848,7 @@ body{
 		border: none;
 		background-position: top;
 		background-image: url(img/logo-3-sm-new.png);
-		height: 660px;
+		height: 680px;
 		/*width: 100%;*/
 	}
 	.footer p{
@@ -897,7 +894,7 @@ body{
 		padding: 5% 0 1%;
 	}
 	.bloc-4-txt h3{
-		font-size: 20px;
+		font-size: 28px;
 		line-height: 30px;
 	}
 	.bloc-4-txt h4{
