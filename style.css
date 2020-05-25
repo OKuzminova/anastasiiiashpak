@@ -774,11 +774,11 @@ body{
 	}
 	/*------------ Стили контента БЛОК 5 РЕЗУЛЬТАТЫ УЧАСТНИЦ (Слайдер) ------------*/
 	.slider-2{
-	    height: 130px;
+	    height: 550px;
 	}
 	/* Картинка мастабируется по отношению к родительскому элементу */
 	.slider-2 .item-2 img {
-	    height: 130px;
+	    height: 550px;
 	}
 	.slider-dots-2_item-2{
 	    height: 6px;
@@ -897,6 +897,12 @@ body{
 	.slider .item img {
 	    height: 400px;
 	}
+	.slider-2{
+	    height: 350px;
+	}
+	.slider-2 .item-2 img {
+	    height: 350px;
+	}
 	.bloc-4-txt h3{
 		font-size: 28px;
 		line-height: 30px;
@@ -970,9 +976,9 @@ body{
 	    height: 350px;
 	}
 	.slider-2{
-	    height: 120px;
+	    height: 250px;
 	}
 	.slider-2 .item-2 img {
-	    height: 120px;
+	    height: 250px;
 	}
 }
