@@ -204,7 +204,7 @@ body{
 }
 /* Cлайдер */
 .slider{
-    max-width: 60%;
+    max-width: 80%;
     position: relative;
     height: 700px;
 }
@@ -358,7 +358,7 @@ body{
 }
 /* Cлайдер */
 .slider-2{
-    max-width: 70%;
+    max-width: 80%;
     position: relative;
     height: 600px;
 }
@@ -663,10 +663,10 @@ body{
 		line-height: 30px;
 	}
 	.slider{
-	    height: 400px;
+	    height: 550px;
 	}
 	.slider .item img {
-	    height: 400px;
+	    height: 550px;
 	}
 	.slider-2{
 	    height: 300px;
@@ -744,11 +744,10 @@ body{
 		padding: 2% 1% 8%;
 	}
 	.slider{
-    	max-width: 80%;
-	    height: 300px;
+	    height: 500px;
 	}
 	.slider .item img {
-	    height: 300px;
+	    height: 500px;
 	}
 	.slider-dots_item{
 	    height: 6px;
@@ -775,7 +774,6 @@ body{
 	}
 	/*------------ Стили контента БЛОК 5 РЕЗУЛЬТАТЫ УЧАСТНИЦ (Слайдер) ------------*/
 	.slider-2{
-	    max-width: 80%;
 	    height: 130px;
 	}
 	/* Картинка мастабируется по отношению к родительскому элементу */
@@ -893,6 +891,12 @@ body{
 		line-height: 20px;
 		padding: 5% 0 1%;
 	}
+	.slider{
+	    height: 400px;
+	}
+	.slider .item img {
+	    height: 400px;
+	}
 	.bloc-4-txt h3{
 		font-size: 28px;
 		line-height: 30px;
@@ -916,15 +920,9 @@ body{
 		font-size: 14px;
 		margin-top: 2%;
 	}
-	.bloc-3-slider {
+	/*.bloc-3-slider {
 		width: 90%;
-	}
-	.slider{
-    	max-width: 90%;
-	}
-	.slider-2{
-    	max-width: 90%;
-	}
+	}*/
 	/*Стили для формы*/
 	.block-6{
 		padding-bottom: 1%;
@@ -966,10 +964,10 @@ body{
 	}
 	@media screen and (max-width: 380px) {
 	.slider{
-    	height: 200px;
+    	height: 350px;
 	}
 	.slider .item img {
-	    height: 200px;
+	    height: 350px;
 	}
 	.slider-2{
 	    height: 120px;
