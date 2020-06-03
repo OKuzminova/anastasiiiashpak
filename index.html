@@ -6,6 +6,45 @@
   <link rel="stylesheet" type="text/css" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="script.js"></script>
+  <style>
+    @media screen and (max-width: 420px) {
+
+  .bloc-3-slider {
+	width: 85%;
+	padding-top: 6%;
+  }
+
+  .bloc-3-slider {
+	
+	padding: 5% 3% 8%;
+	display: flex;
+	flex-direction: column;
+	align-items: justify-content;
+}
+
+/* Cлайдер */
+.slider{
+    max-width: 80%;
+    position: relative;
+    height: 350px;
+}
+/*	.slider{
+	    height: 400px;
+	}*/
+	.slider .item img {
+	    height: 350px;
+	}
+      .slider .prev, .slider .next {
+
+    margin: 0 -80%;
+
+}
+.slider .next{
+    right: 50%;
+    border-radius: 0 50px 50px 0;
+}
+    }
+  </style>
 </head>
 <body>
   <div class="content">
@@ -23,9 +62,9 @@
     	<!-- Дата -->
 	    <div class="bloc-1">
 	        <div class="bloc-1-txt">
-		        <p>СТАРТ 8&nbsp;СЕЗОНА – 8&nbsp;ИЮНЯ</p>
+		        <p>СТАРТ 8&nbsp;СЕЗОНА – 11&nbsp;ИЮНЯ</p>
 		        <!--<p class="btn-1"><a href="form-reg.html" title="Записаться" target="_blank">Записаться</a></p>-->
-		        <a href="form-reg.html" title="Записаться" target="_blank"><button class="btn-1">Записаться</button></a>
+		        <a href="form-reg.php" title="Записаться" target="_blank"><button class="btn-1" style="margin-top: 8%;">Записаться</button></a>
 	        </div>
 	    </div>
 	    <!-- END Дата -->
@@ -48,11 +87,11 @@
 	          	<div class="bloc-3-txt">
 		            <h2>О МАРАФОНЕ</h2>
 					<p>Привет!</p>
-					<p>Марафон разработан для любого уровня подготовки и подойдёт для тех, кто – хочет похудеть, поработать над рельефом тела, а так же набрать мышечную массу.</p>
-					<p>Тебя жду разнообразные тренировки в видео формате, сбалансированное меню, вкусные рецепты.</p>
+					<p>Марафон разработан для любого уровня подготовки. Подойдет для тех, кто – хочет похудеть, поработать над рельефом тела, а так же набрать мышечную массу.</p>
+					<p>Тебя жду разнообразные тренировки в видео формате, сбалансированное питание, вкусные рецепты.</p>
 					<p>21 день я буду делиться с Вами своими знаниями и опытом. Поддерживать и консультировать в общем чате в WhatsApp со всеми участниками.</p>
-					<p>В закрытом профиле марафона – я буду выходить в прямой эфир, где мы так же сможем общаться и подробнее разобрать все упражнения. Присоединяйся!</p>
-					<p align="center"><a href="form-reg.html" title="Записаться" target="_blank"><button class="btn-1">Записаться</button></a></p>
+					<p>В закрытом профиле марафона – я буду выходить в прямой эфир, где мы так же сможем общаться и подробнее разобрать все упражнения. Присоединяйся!</p>
+					<p align="center"><a href="form-reg.php" title="Записаться" target="_blank"><button class="btn-1">Записаться</button></a></p>
 	          	</div>
 	          	<!-- Отзывы слайдер -->
 				<div class="bloc-3-slider">
@@ -105,7 +144,7 @@
 	        		<h2>СТОИМОСТЬ МАРАФОНА</h2>
 	        		<h3>990 руб.</h3>
 	        		<h4>Цена одной персональной тренировки в зале</h4>
-	        		<a href="form-reg.html" title="Записаться" target="_blank"><button class="btn-2">Записаться</button></a>
+	        		<a href="form-reg.php" title="Записаться" target="_blank"><button class="btn-2">Записаться</button></a>
 	        	</div>
 	        </div>
 	    </div>

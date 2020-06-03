@@ -188,8 +188,8 @@ body{
 }
 /*------------ Стили контента БЛОК 3 ОТЗЫВЫ (Слайдер) ------------*/
 .bloc-3-slider {
-	width: 70%;
-	padding: 2% 8% 8%;
+	width: 45%;
+	padding: 5% 8% 8%;
 	display: flex;
 	flex-direction: column;
 	align-items: justify-content;
@@ -443,8 +443,8 @@ body{
 /*Стили контента БЛОК 6 РЕГИСТРАЦИЯ*/
 .block-6{
 	width: 100%;
+  height:100%;
 	padding-bottom: 15%;
-	height: 450px;
 	background-color: #CBC1B9;	
 }
 .block-6-content{
@@ -458,7 +458,6 @@ body{
 	padding-bottom: 4%;
 	font-size: 28px;
 	font-weight: bold;
-	color: black;
 	text-align: center;
 	line-height: 40px;
 }
@@ -488,13 +487,14 @@ body{
     text-align: center;
     font-weight: bold;
     font-size: 22px;
-    width: 260px;
+    width: 320px;
     border-radius: 50px;
-    padding: 8px 25px;
+    padding: 15px 25px;
     margin-top: 1%;
     background-color: #D88658;
     transition: 1s;
     overflow: hidden;
+  border: none;
 }
 .btn-3 a{
     color: black;
@@ -744,10 +744,10 @@ body{
 		padding: 2% 1% 8%;
 	}
 	.slider{
-	    height: 500px;
+	    height: 450px;
 	}
 	.slider .item img {
-	    height: 500px;
+	    height: 450px;
 	}
 	.slider-dots_item{
 	    height: 6px;
@@ -878,6 +878,7 @@ body{
 		font-size: 12px;
 		line-height: 25px;
 	}
+
 	.block-3{
 		padding: 4% 0 2%;
 	}
@@ -886,16 +887,34 @@ body{
 		line-height: 25px;
 		text-decoration: none;
 	}
+  .bloc-3-slider {
+	width: 85%;
+	padding-top: 6%;
+  }
 	.bloc-3-txt h2, .bloc-3-slider h2, .bloc-4-txt h2, .block-5-slider h2, .bloc-7-txt h2{
 		font-size: 18px;
 		line-height: 20px;
 		padding: 5% 0 1%;
 	}
-	.slider{
+  .bloc-3-slider {
+	
+	padding: 5% 3% 8%;
+	display: flex;
+	flex-direction: column;
+	align-items: justify-content;
+}
+
+/* Cлайдер */
+.slider{
+    max-width: 90%;
+    position: relative;
+    height: 300px;
+}
+/*	.slider{
 	    height: 400px;
-	}
+	}*/
 	.slider .item img {
-	    height: 400px;
+	    height: 300px;
 	}
 	.slider-2{
 	    height: 350px;
@@ -922,9 +941,13 @@ body{
 	.block-5-slider{
 		padding: 1% 1% 2%;
 	}
-	.btn-1, .btn-2{
+	.btn-1{
 		font-size: 14px;
-		margin-top: 2%;
+		margin-top: 4%;
+	}
+  .btn-2{
+		font-size: 14px;
+		margin-top: 4%;
 	}
 	/*.bloc-3-slider {
 		width: 90%;
@@ -932,11 +955,12 @@ body{
 	/*Стили для формы*/
 	.block-6{
 		padding-bottom: 1%;
+	    height: 800px;
 	}
 	.block-6-content{
 		padding-top: 5%;
-		margin-left: 10%;
-		width: 80%;
+		margin-left: 5%;
+		width: 90%;
 		display: flex;
 	}
 	.bloc-6-txt h2{
@@ -947,7 +971,7 @@ body{
 	.forma {
 		margin-top: 10%;
 		padding: 6% 4% 5%;
-		width: 90%;
+		width:100%;
 	}
 	.forma p{
 		font-size: 12px;
@@ -963,11 +987,13 @@ body{
 	}
 	.btn-3{
 		font-size: 14px;
-	    width: 150px;
+	    width: 100%;
 	    margin-top: 6%;
 	    transition: 1s;
 	    overflow: hidden;
 	}
+
+    
 	@media screen and (max-width: 380px) {
 	.slider{
     	height: 350px;
